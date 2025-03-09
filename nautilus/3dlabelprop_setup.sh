@@ -19,18 +19,19 @@ tar -xf vscode_cli.tar.gz
 #cd /home
 #git clone https://github.com/DarthIV02/3DLabelProp.git
 #cd 3DLabelProp/
-echo Y | conda install pytorch==2.4.1 torchvision==0.19.1 torchaudio cudatoolkit=11.0 -c pytorch
+#echo Y | conda install pytorch==2.4.1 torchvision==0.19.1 torchaudio cudatoolkit=11.0 -c pytorch
 echo Y | pip install -r requirements.txt
 cd cpp_wrappers
 bash compile_wrappers.sh
-echo Y | pip install --force-reinstall torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu117
+#echo Y | pip install --force-reinstall torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu117
 echo Y | conda install -c torchhd torchhd
 
-cd /tmp
-wget https://apt.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB
-apt-key add GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB
-apt update
-apt-get -y install intel-mkl-64bit-2018.2-046
+## Not sure what this is for
+#cd /tmp
+#wget https://apt.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB
+#apt-key add GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB
+#apt update
+#apt-get -y install intel-mkl-64bit-2018.2-046
 
 #export LD_LIBRARY_PATH=/root/anaconda3/envs/3DLabelProp/lib:$LD_LIBRARY_PATH
 # OR export LD_LIBRARY_PATH=/home/ubuntu/anaconda3/envs/3DLabelProp/lib:$LD_LIBRARY_PATH
