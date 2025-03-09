@@ -1,0 +1,49 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: scalr-test
+  labels:
+    k8s-app: scalr-test
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      k8s-app: scalr-test
+  template:
+    metadata:
+      labels:
+        k8s-app: scalr-test
+    spec:
+      volumes:
+        - name: temp-ivannia-volume
+          persistentVolumeClaim:
+            claimName: temp-ivannia-volume
+        - emptyDir:
+            medium: Memory
+          name: cache-volume
+      containers:
+        - name: scalr-test-pod
+          image: nvidia/cuda:11.8.0-cudnn8-devel-ubuntu20.04
+          command: ["sleep", "infinity"]
+          resources:
+            limits:
+              nvidia.com/gpu: "1"
+              memory: "16G"
+              cpu: "1"
+            requests:
+              memory: "16G"
+              cpu: "1"
+          volumeMounts:
+          - mountPath: /root/main
+            name: temp-ivannia-volume
+          - mountPath: /dev/shm
+            name: cache-volume
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+              - matchExpressions:
+                  - key: nvidia.com/gpu.product
+                    operator: In
+                    values:
+                      - NVIDIA-RTX-A5000
