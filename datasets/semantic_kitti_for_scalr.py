@@ -93,7 +93,7 @@ class SemanticKITTISemSeg(PCDataset):
                     )
                 )
         else:
-            with open("/home/HyperLiDAR/datasets/semantickitti_5pct.txt", "r") as file:
+            with open("/home/HyperLiDAR/datasets/semantickitti_minidataset_pct.txt", "r") as file:
                 for line in file:
                     line = line.split("/")
                     line = "/".join(line[2:])
