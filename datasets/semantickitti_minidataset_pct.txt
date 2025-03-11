@@ -47,7 +47,7 @@ data_odometry_velodyne/dataset/sequences/04/velodyne/000005.bin
 data_odometry_velodyne/dataset/sequences/04/velodyne/000006.bin
 data_odometry_velodyne/dataset/sequences/04/velodyne/000007.bin
 data_odometry_velodyne/dataset/sequences/04/velodyne/000008.bin
-data_odometry_velodyne/dataset/sequences/05/velodyne/000009.bin
+data_odometry_velodyne/dataset/sequences/04/velodyne/000009.bin
 data_odometry_velodyne/dataset/sequences/05/velodyne/000000.bin
 data_odometry_velodyne/dataset/sequences/05/velodyne/000001.bin
 data_odometry_velodyne/dataset/sequences/05/velodyne/000002.bin
@@ -78,16 +78,6 @@ data_odometry_velodyne/dataset/sequences/07/velodyne/000006.bin
 data_odometry_velodyne/dataset/sequences/07/velodyne/000007.bin
 data_odometry_velodyne/dataset/sequences/07/velodyne/000008.bin
 data_odometry_velodyne/dataset/sequences/07/velodyne/000009.bin
-data_odometry_velodyne/dataset/sequences/08/velodyne/000000.bin
-data_odometry_velodyne/dataset/sequences/08/velodyne/000001.bin
-data_odometry_velodyne/dataset/sequences/08/velodyne/000002.bin
-data_odometry_velodyne/dataset/sequences/08/velodyne/000003.bin
-data_odometry_velodyne/dataset/sequences/08/velodyne/000004.bin
-data_odometry_velodyne/dataset/sequences/08/velodyne/000005.bin
-data_odometry_velodyne/dataset/sequences/08/velodyne/000006.bin
-data_odometry_velodyne/dataset/sequences/08/velodyne/000007.bin
-data_odometry_velodyne/dataset/sequences/08/velodyne/000008.bin
-data_odometry_velodyne/dataset/sequences/08/velodyne/000009.bin
 data_odometry_velodyne/dataset/sequences/09/velodyne/000000.bin
 data_odometry_velodyne/dataset/sequences/09/velodyne/000001.bin
 data_odometry_velodyne/dataset/sequences/09/velodyne/000002.bin
@@ -108,4 +98,3 @@ data_odometry_velodyne/dataset/sequences/10/velodyne/000006.bin
 data_odometry_velodyne/dataset/sequences/10/velodyne/000007.bin
 data_odometry_velodyne/dataset/sequences/10/velodyne/000008.bin
 data_odometry_velodyne/dataset/sequences/10/velodyne/000009.bin
-
